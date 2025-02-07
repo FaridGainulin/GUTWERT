@@ -1,0 +1,24 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      h2.city-section__title.font-w-c-regular.font-s-44
+        span.color-yellow
+          | Станьте партнером 
+          br
+          | франшизы «GUTWERT»
+        br
+        | и зарабатывайте 
+        br
+        | от 430 000 рублей в месяц
+      .city-section__bottom
+        .city-section__block
+          img.city-section__logo(src="images/logo-secondary.png" loading="lazy" width="211" height="96" alt="logo")
+          .font-w-bold.font-s-16
+            | На услугах защиты 
+            br
+            | авто от ржавчины
+        form.city-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") Узнать условия

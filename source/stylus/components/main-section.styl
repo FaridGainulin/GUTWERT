@@ -1,0 +1,153 @@
+.main-section
+  background-image: url('../images/main-section-bg.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  background-color #2F2F2F
+
+  &__container
+    position relative
+    z-index 1
+    padding 20px 0 0
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+      padding 30px 0 70px
+    +above($breakpoints.md)
+      padding 40px 0 90px
+    +above($breakpoints.xxl)
+      padding 56px 0 137px
+
+  &__logo
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      width 140px
+      height: auto
+      margin 30px 0 15px
+    +above($breakpoints.md)
+      width 200px
+      margin 50px 0 20px
+    +above($breakpoints.xxl)
+      width 234px
+      margin 66px 0 27px
+
+  &__title
+    position relative
+    z-index 1
+    padding-top 20px
+    +above($breakpoints.sm)
+      padding 0
+    &:after
+      content: ""
+      position: absolute
+      z-index -1
+      background-color #363636
+      border-radius: 5px
+      width: 117px;
+      height: 22px;
+      bottom: -1px;
+      left: 154px;
+      +above($breakpoints.sm)
+        border-radius: 8px;
+        width: 172px;
+        height: 30px;
+        bottom: 0px;
+        left: 269px;
+      +above($breakpoints.md)
+        border-radius: 10px;
+        width: 246px;
+        height: 46px;
+        bottom: -1px;
+        left: 388px;
+      +above($breakpoints.xxl)
+        border-radius: 14px
+        width: 304px;
+        height: 60px;
+        bottom: -3px;
+        left: 472px;
+
+  &__bottom
+    display: flex
+    flex-direction: column-reverse
+    align-items: center
+    gap: 10px
+    margin-top 15px
+    +above($breakpoints.sm)
+      flex-direction: row
+      align-items: flex-end
+      gap: 15px
+      margin-top 30px
+    +above($breakpoints.md)
+      gap: 20px
+      margin-top 40px
+    +above($breakpoints.xxl)
+      gap: 26px
+      margin-top 58px
+
+  &__form
+    position relative
+    width 100%
+    background-color #2C2C2C
+    display: flex
+    flex-direction: column
+    gap: 5px
+    border-radius: 5px
+    padding 18px 14px
+    +above($breakpoints.sm)
+      border-radius: 8px
+      width 230px
+      padding 20px 15px
+    +above($breakpoints.md)
+      border-radius: 10px
+      width 280px
+      padding 25px 18px
+    +above($breakpoints.xxl)
+      border-radius: 13px
+      height: 247px
+      width 300px
+      padding 30px 20px
+
+  &__block
+    display: flex
+    align-items: center
+    gap: 5px
+    +above($breakpoints.sm)
+      flex-direction: column
+      align-items: flex-start
+      gap: 7px
+    +above($breakpoints.md)
+      gap: 8px
+    +above($breakpoints.xxl)
+      gap: 9px
+      margin-bottom 3px
+
+  &__icon
+    width 26px
+    height: 26px
+    +above($breakpoints.sm)
+      width 25px
+      height: 25px
+    +above($breakpoints.md)
+      width 30px
+      height: 30px
+    +above($breakpoints.xxl)
+      width 35px
+      height: 35px
+
+  &__img
+    width 260px
+    height: auto
+    margin: -45px 0 0 48px;
+    +above($breakpoints.sm)
+      margin 0
+      position: absolute
+      z-index -1
+      height: 100%
+      width: auto
+      bottom: 0;
+      right: -230px;
+    +above($breakpoints.md)
+      right: -290px;
+    +above($breakpoints.xxl)
+      right: -370px

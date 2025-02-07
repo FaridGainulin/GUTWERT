@@ -1,0 +1,32 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      img.main-section__logo(src="images/logo-main.png" loading="lazy" width="468" height="162" alt="logo")
+      h1.main-section__title.font-w-c-regular.font-s-44
+        | Зарабатывайте 
+        br
+        | от 430 000 ₽ ежемесячно 
+        br.no-br
+        span.font-w-c-bold.color-yellow
+          | на востребованных услугах 
+          br.no-br
+          | защиты автомобилей от ржавчины
+      .main-section__bottom
+        form.main-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") СКАЧАТЬ
+        .main-section__block
+          img.main-section__icon(src="images/main-section-icon.svg" loading="lazy" width="35" height="35" alt="icon")
+          .font-s-16
+            span.font-w-bold
+              | Скачайте детальную 
+              br.no-br
+              | презентацию 
+            br.no-br
+            | франшизы антикорцентра 
+            br.no-br
+            | «GUTWERT»
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="856" height="960" alt="image")

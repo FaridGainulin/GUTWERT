@@ -1,0 +1,191 @@
+.invest-section
+  background-image: url('../images/invest-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #fff
+
+  &__container
+    position relative
+    z-index 1
+    padding 50px 0 5px
+    +above($breakpoints.sm)
+      padding 80px 0
+    +above($breakpoints.md)
+      padding 100px 0
+    +above($breakpoints.xxl)
+      padding 167px 0 194px
+
+  &__title
+    position relative
+    color: #000
+    text-align: center
+    padding-bottom 25px
+    +above($breakpoints.sm)
+      text-align: start
+      padding-bottom 40px
+    +above($breakpoints.md)
+      padding-bottom 60px
+    +above($breakpoints.xxl)
+      padding-bottom 75px
+
+  &__logo
+    position: absolute
+    width: 70px;
+    height: auto;
+    top: 0;
+    right: -27px;
+    +above($breakpoints.sm)
+      right: 0
+      width 120px
+    +above($breakpoints.md)
+      width 160px
+    +above($breakpoints.xxl)
+      width 211px
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      justify-content center
+      align-items: flex-start
+      gap: 20px
+    +above($breakpoints.md)
+      gap: 40px
+    +above($breakpoints.xxl)
+      gap: 50px
+
+  &__card
+    position relative
+    width 280px !important
+    border-radius: 10px
+    background-color #F5F5F5
+    +above($breakpoints.sm)
+      border-radius: 15px
+      width 228px !important
+    +above($breakpoints.md)
+      border-radius: 20px
+      width 295px !important
+    +above($breakpoints.xxl)
+      border-radius: 30px
+      width 360px !important
+
+  &__card-icon
+    position: absolute
+    left: 50%
+    top: 0
+    transform: translate(-50%, -50%)
+    width 40px
+    height: 40px
+    +above($breakpoints.md)
+      width 50px
+      height: 50px
+    +above($breakpoints.xxl)
+      width 60px
+      height: 60px
+
+  &__card-title
+    text-align: center
+    width 100%
+    aspect-ratio: 360 / 194
+    background-image: url('../images/invest-section-card-bg-1.jpg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    background-color #000
+    border-radius: 10px 10px 0 0
+    padding-top 95px
+    +above($breakpoints.sm)
+      border-radius: 15px 15px 0 0
+      padding-top 75px
+    +above($breakpoints.md)
+      border-radius: 20px 20px 0 0
+      padding-top 97px
+    +above($breakpoints.xxl)
+      border-radius: 30px 30px 0 0
+      padding-top 118px
+    &--2
+      background-image: url('../images/invest-section-card-bg-2.jpg')
+    &--3
+      background-image: url('../images/invest-section-card-bg-3.jpg')
+
+  &__card-body
+    width 100%
+    color: #5D5D5D
+    display: flex
+    flex-direction: column
+    gap: 7px
+    padding 15px 5px 15px 10px
+    +above($breakpoints.sm)
+      padding 15px 5px 20px 10px
+      gap: 10px
+    +above($breakpoints.md)
+      padding 20px 5px 25px 20px
+      gap: 12px
+    +above($breakpoints.xxl)
+      padding 24px 5px 33px 26px
+      gap: 16px
+
+  &__card-block
+    display: flex
+    align-items: center
+    gap: 5px
+    +above($breakpoints.sm)
+      gap: 7px
+    +above($breakpoints.md)
+      gap: 9px
+    +above($breakpoints.xxl)
+      gap: 10px
+
+  &__block-icon
+    width 12px
+    height: 12px
+    +above($breakpoints.sm)
+      width 13px
+      height: 13px
+    +above($breakpoints.md)
+      width 14px
+      height: 14px
+    +above($breakpoints.xxl)
+      width 15px
+      height: 15px
+
+  &__card-bottom
+    color: #000
+    text-align: center
+    width 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom 15px
+    +above($breakpoints.sm)
+      margin-bottom 20px
+    +above($breakpoints.md)
+      margin-bottom 30px
+    +above($breakpoints.xxl)
+      margin-bottom 40px
+
+  &__bottom-icon
+    width 18px
+    height: auto
+    margin 5px 0 10px
+    +above($breakpoints.sm)
+      width 15px
+      margin 10px 0 15px
+    +above($breakpoints.md)
+      width 18px
+      margin 10px 0 20px
+    +above($breakpoints.xxl)
+      width 20px
+      margin 10px 0 28px
+
+  &__form
+    display: flex
+    flex-direction: column
+    gap: 5px
+    width 230px
+    +above($breakpoints.sm)
+      width 180px
+    +above($breakpoints.md)
+      width 220px
+    +above($breakpoints.xxl)
+      width 260px

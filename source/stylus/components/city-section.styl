@@ -1,0 +1,94 @@
+.city-section
+  background-image: url('../images/city-section-bg.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  background-color #161616
+
+  &__container
+    position relative
+    z-index 1
+    text-align: center
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding 20px 0
+    +above($breakpoints.sm)
+      align-items: flex-end
+      text-align: end
+      padding 65px 0
+    +above($breakpoints.md)
+      padding 95px 0
+    +above($breakpoints.xxl)
+      padding 151px 0 149px
+
+  &__title
+    padding-bottom 20px
+    +above($breakpoints.sm)
+      padding-bottom 30px
+    +above($breakpoints.md)
+      padding-bottom 50px
+    +above($breakpoints.xxl)
+      padding-bottom 70px
+
+  &__bottom
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 15px
+    +above($breakpoints.sm)
+      flex-direction: row
+      align-items: flex-end
+      gap: 20px
+    +above($breakpoints.md)
+      gap: 25px
+    +above($breakpoints.xxl)
+      gap: 32px
+
+  &__block
+    display: flex
+    align-items: center
+    justify-content center
+    gap: 12px
+    +above($breakpoints.sm)
+      flex-direction: column
+      justify-content flex-start
+      align-items: flex-end
+      gap: 6px
+      margin-bottom 10px
+    +above($breakpoints.md)
+      margin-bottom 15px
+    +above($breakpoints.xxl)
+      margin-bottom 22px
+
+  &__logo
+    width 60px
+    height: auto
+    +above($breakpoints.sm)
+      width 55px
+    +above($breakpoints.md)
+      width 65px
+    +above($breakpoints.xxl)
+      width 73px
+
+  &__form
+    width 100%
+    background-color #2C2C2C
+    display: flex
+    flex-direction: column
+    gap: 5px
+    border-radius: 5px
+    padding 18px 14px
+    +above($breakpoints.sm)
+      border-radius: 8px
+      width 230px
+      padding 20px 15px
+    +above($breakpoints.md)
+      border-radius: 10px
+      width 280px
+      padding 25px 18px
+    +above($breakpoints.xxl)
+      border-radius: 13px
+      height: 247px
+      width 300px
+      padding 30px 20px

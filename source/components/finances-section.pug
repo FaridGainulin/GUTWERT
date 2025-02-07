@@ -1,0 +1,64 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      img.finances-section__img-bg(src="images/finances-section-img-bg.png" loading="lazy" width="936" height="960" alt="image")
+      h2.finances-section__title.font-w-c-bold.font-s-45.text-up
+        | На какие цифры 
+        br
+        span.color-red можно рассчитывать?
+      .finances-section__box
+        .finances-section__block
+          img.finances-section__icon(src="images/finances-section-icon.svg" loading="lazy" width="30" height="30" alt="icon")
+          .font-s-22
+            span.font-w-bold Ознакомьтесь 
+            br.no-br
+            | с показателями 
+            br.no-br
+            | франшизы
+        .swiper-bullet
+          .finances-section__cards.swiper-wrapper
+            .finances-section__card.swiper-slide
+              img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="53" height="53" alt="icon")
+              .finances-section__card-title.font-w-c-bold.font-s-32-a.text-up 49 дней
+              .font-s-20 понадобится <br> на запуск
+            .finances-section__card.swiper-slide
+              img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="53" height="53" alt="icon")
+              .finances-section__card-title.font-w-c-bold.font-s-32-a.text-up 1 865 000 ₽
+              .font-s-20 средний <br> размер инвестиций
+            .finances-section__card.swiper-slide
+              img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="53" height="53" alt="icon")
+              .finances-section__card-title.font-w-c-bold.font-s-32-a.text-up 9 месяцев
+              .font-s-20 средний срок <br> окупаемости
+            .finances-section__card.swiper-slide
+              img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="53" height="53" alt="icon")
+              .finances-section__card-title.font-w-c-bold.font-s-32-a.text-up 1 370 000 ₽
+              .font-s-20 средняя <br> ежемесячная выручка
+            .finances-section__card.swiper-slide
+              img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="53" height="53" alt="icon")
+              .finances-section__card-title.font-w-c-bold.font-s-32-a.text-up 31,3%
+              .font-s-20 рентабельность <br> по чистой прибыли
+            .finances-section__card.swiper-slide
+              img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="53" height="53" alt="icon")
+              .finances-section__card-title.font-w-c-bold.font-s-32-a.text-up 430 000 ₽
+              .font-s-20 средняя <br> ежемесячная прибыль
+          .bullet-pagination.bullet-pagination--right
+      .finances-section__bottom
+        img.finances-section__bottom-img(src="images/finances-section-bottom-img.png" loading="lazy" width="354" height="309" alt="image")
+        img.finances-section__bottom-icon(src="images/finances-section-bottom-icon.png" loading="lazy" width="300" height="36" alt="icon")
+        .finances-section__bottom-block.text-up
+          .finances-section__bottom-text.font-w-bold.font-s-14
+            | Хотите получить детальные 
+            br.no-br
+            | расчеты для вашего города 
+            br.no-br
+            | и под ваш бюджет?
+          .font-w-c-bold.font-s-32
+            span.color-red Скачайте 
+            | финансовую 
+            br.no-br
+            | модель франшизы
+        form.finances-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") СКАЧАТЬ
